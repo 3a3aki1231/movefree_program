@@ -1,4 +1,4 @@
-3.Webサイトの裏側を想像する
+3. Webサイトの裏側を想像する
 
 【選んだサイトURL】
 https://jp-news.mercari.com/mercari-shops/
