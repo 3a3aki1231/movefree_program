@@ -1,0 +1,37 @@
+
+.parent-box {
+    position: relative; /* 子要素のposition: absoluteの基準にする */
+    width: 300px;
+    height: 200px;
+    background-color: #f7e7d4;
+    border: 2px solid #e6b9a6;
+    margin: 50px auto; /* 親要素を中央寄せ */
+}
+
+.child-box {
+    width: 100px;
+    height: 50px;
+    background-color: #a7d9b5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
+    position: absolute; /* 親要素基準で位置を決定 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 自身のサイズ基準で中央に補正 */
+
+    /* 上下にふわふわ移動するアニメーション */
+    animation: floaty 2s ease-in-out infinite alternate;
+}
+
+@keyframes floaty {
+    0% {
+        transform: translate(-50%, -50%); /* 元の位置（中央） */
+    }
+    100% {
+        transform: translate(-50%, -60%); /* 少し上に移動 */
+    }
+}
